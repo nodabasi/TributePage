@@ -1,0 +1,87 @@
+<style>
+    html{
+        text-align: center;
+        background-image:url("motor.jpg");
+        background-size: cover;
+         
+    }
+    body{
+        color:white;
+
+    }
+    
+    #title{
+        text-decoration:underline;
+        color: chocolate;
+    }
+    #dd{
+        color:black;
+        text-decoration: underline;
+    }
+    #survey-form{
+        color:black;
+    }
+    #radios{
+        color: white;
+    }
+    .c_but{
+        color: white
+    }
+    .input{
+        color: white;
+    }
+</style>
+
+
+<html>
+    <head>
+        <h1 id="title">Motorcycle Survey</h1>
+    </head>
+    <body>
+    <p id="description">Please Enter Your Information</p>
+        <form id="survey-form">
+            <label id="name-label" >Name:</label>
+            <input type="name" id="name" name="name"  required placeholder="Your Name:">
+            <label id="email-label" >Email:</label>
+            <input type="email" id="email" name="email"  required placeholder="Your E-mail:">
+            <label id="number-label" >Number of Your Bikes:</label>
+            <input type="number" id="number" name="number"  min="0" max="10" required placeholder="Number:">
+            
+            <p id="dd">Select Your Motor Type</p>
+            <select id="dropdown" name="motor-styles">
+                <option value="cross">Cross</option>
+                <option value="naked">Naked</option>
+                <option value="chopper">Chopper</option>
+                <option value="racing">Racing</option>
+                <option value="touring">Touring</option>
+            </select>
+            <div id="radios">
+                <p style="color: aliceblue">Select Your Motor Power:</p>
+                <br>
+                <input type="radio" name="power" value="125cc">125cc<br>
+                <input type="radio" name="power" value="150cc">150cc<br>
+                <input type="radio" name="power" value="250cc">250cc<br>
+                <input type="radio" name="power" value="500cc">500cc<br>
+                <input type="radio" name="power" value="600cc">6000cc<br>
+                <input type="radio" name="power" value="750cc">750cc<br>
+                <input type="radio" name="power" value="1250cc">1250cc<br>
+            </div>
+            <div class="c_but">
+                <p>Check Your Equipments:</p>
+                <br>
+                <input type="checkbox" value="helmet">Helmet<br>
+                <input type="checkbox" value="vest">Vest<br>
+                <input type="checkbox" value="gloves">Gloves<br>
+            </div>
+            
+
+                <div class="input">
+                    <label for="comment">Type Your Comment for us:</label>
+                    <textarea id="comment" placeholder="Your Precious Comments"></textarea>
+                </div>            
+            
+            <button id="submit" type="submit">Submit Your Answers</button>
+        </form>
+    </body>
+
+</html>
