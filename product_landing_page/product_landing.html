@@ -1,0 +1,95 @@
+<style>
+    #header-img{
+        width: 150px;
+    }
+    @media screen{
+        nav{
+            position:fixed;
+            overflow: hidden;
+            background-color:darkgray;
+            text-align:inherit;
+            display: block;
+            text-decoration: none;
+        }         
+    }
+    
+    #nav-bar{
+        background-color: beige;
+        width: inherit;
+        display: block;
+    }
+    #section-title{
+        font-size: 25px;
+    }
+    #photo{
+        width: 350px;
+        height: 250px;
+    }
+    .flex-container {
+        display: flex;
+        background-color:chocolate;
+    }
+
+    .flex-container > div {
+        background-color: #f1f1f1;
+        margin: 10px;
+        padding: 20px;
+        font-size: 30px;
+        text-align: center;
+    }
+
+</style>
+
+
+<html>
+
+    <header id="header">
+        <nav id="nav-bar">
+            <a class="nav-link" href="#wheels">Wheels</a>
+            <a class="nav-link" href="#motor-power">Motor Power</a>
+            <a class="nav-link" href="#videos">Video</a>
+            <a class="nav-link" href="#galery">Galery</a>
+        </nav>
+        <img id="header-img" src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.stickpng.com%2Fimg%2Ftransport%2Fmotorcycles%2Fharley%2Fharley-davidson-logo-classic&psig=AOvVaw3r5jRdWcgSZQY25aW79LU8&ust=1608308821017000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCLDjqLK31e0CFQAAAAAdAAAAABAD">         
+        <h1>Motorcycle Company</h1>
+
+    </header>
+    
+    <body>
+        <form id="form" action=" https://www.freecodecamp.com/email-submit">
+            <input id="email" type="email" name="email" placeholder="Enter Your Email">
+            <input id="submit" type="submit">
+        
+        </form>    
+    
+        
+        <section id="videos">
+            <h5 id="section-title">An Amazing Video</h5>
+            <iframe  id="video" width="560" height="315" src="https://www.youtube.com/embed/dwx2f_tSe38" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </section>
+        <section id="wheels">
+            <h2 id="section-title">Motor Wheels</h2>
+            <p>This article was originally published in the April-May 1997 issue of Cycle World's Big Twin magazine. Wheels, beautiful wheels, flashing spokes, whirl­ing, sparkling shapes in motion—their variety has become practically endless. There are cast wheels, traditional wire wheels, die-stamped wheels, even rotary forged or spun wheels. There are wheels with CNC-machined spokes, wheels with slots and fins and stars. Lots to see, but what is there to know about wheels? How are they made? What are their strengths and weaknesses? How are they tested? And perhaps most important of all, why should I care? Let’s start at the obvious place—the beginning. The very first motorcycle had wooden wheels because it was an alien machine intruding into a buggy age. By the turn of the century, motorcycles and bicycles rolled on wire-spoked wheels with metal or wood rims—though the tension-spoke wheel dates back almost 200 years to the water-wheels of Thomas Hewes. Wire wheels, with their threaded spokes and tension-adjusting nipples, dimpled and drilled rims, are an arcane craftsman’s mystery to many of today’s riders, accustomed as they are to the seeming automatic integrity of cast motorcycle wheels. But wire wheels have a sense of their own, and once you’ve had the experience of lacing and trueing, they explain themselves.</p>
+        </section>
+        <section id="motor-power"></section>
+            <h3 id="section-title">Motor Power</h3>
+            <p>The amount of power tells how fast work can be done. When you walk up the stairs for instance, you deliver work, carrying your own weight up the stairs. How fast you can do that determines your power (in      combination with the length of the stairs and your weight: they determine the amount of work).
+                Power is expressed in kilowatt (Kw) or in Horsepower (Hp).
+                When you know the torque of your motorcycle with a given rpm, you can deduce the power, by multiplying the torque with the number of revolutions per minute (and of course with a constant factor to adjust the different dimensions like rpm, Hp and Nm).</p>
+        <section id="galery">
+            <h4 id="section-title">Galery</h4>
+            <img id="photo" src="C:\Users\mehme\Desktop\product_landing_page\a.jpg">
+            <img id="photo" src="C:\Users\mehme\Desktop\product_landing_page\b.jpg">
+            <img id="photo" src="C:\Users\mehme\Desktop\product_landing_page\c.jpg">
+            <img id="photo" src="C:\Users\mehme\Desktop\product_landing_page\d.jpg">
+        
+        </section>
+
+        <div class="flex-container">
+            <div>Motor</div>
+            <div>For</div>
+            <div>Life</div>
+        </div>
+    </body>
+
+</html>
