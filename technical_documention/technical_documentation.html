@@ -1,0 +1,126 @@
+<style>
+    
+    * {
+    box-sizing: border-box;
+    }
+    .column{
+        float: left;
+        width: 50%;
+        padding: 10px;
+        height: 300px;
+    }
+    .row{
+        content: "";
+        display:table;
+        clear: both;
+    }
+    
+    #title{
+        position: fixed;
+        top: 0px;
+    }
+    
+    
+    header{
+        font-family:sans-serif;
+        font-size: 25px;
+    }
+    
+
+    code{
+        background-color: bisque;
+        opacity: 1;
+        background-size:cover;
+        
+    }
+    #img{
+        top: 250px;
+        position:fixed;
+    }
+    
+    #navbar{
+        position: fixed;
+        height: 100%;
+        min-width:250px;
+        width: 300px;
+        top: 0px;
+        left: 0px;
+        padding: 75px 0px;
+        
+    }
+    #nav-list{
+        background-color: aqua;
+    }
+    @media{
+        
+    }
+</style>
+
+<html>
+    <div class="row">
+        <div class="column">
+            <head>
+                <h1 id="title">Python</h1>
+                <nav id="navbar">
+                    <header>Navigation</header> 
+                    <ul id="nav-list">
+                        <li><a class="nav-link" href="#Introduction">Intrduction</a></li>
+                        <li><a class="nav-link" href="#Syntax">Syntax</a></li>
+                        <li><a class="nav-link" href="#Hello_World">Hello World</a></li>
+                        <li><a class="nav-link" href="#List">List</a></li>
+                        <li><a class="nav-link" href="#Why_You_Should_Learn_Python">Why You Should Learn Python</a></li>
+                        <li><a class="nav-link" href="#References">References</a></li>
+                    </ul>
+                </nav>
+                <img id="img" src="C:\Users\mehme\Desktop\technical_documention\icon.png" alt="Python Icon"> 
+            </head>
+        </div>
+        <div class="column">
+            <main id="main-doc">
+                <body>
+                    <section class="main-section" id="Introduction">
+                        <header>Introduction</header>
+                        <p>Python is a widely used general-purpose, high level programming language. It was created by Guido van Rossum in 1991 and further developed by the Python Software Foundation. It was designed with an emphasis on code readability, and its syntax allows programmers to express their concepts in fewer lines of code.</p>
+                        <p>Python is a programming language that lets you work quickly and integrate systems more efficiently. There are two major Python versions: Python 2 and Python 3. Both are quite different.</p>
+                    </section>
+                    <section class="main-section" id="Syntax">
+                        <header>Syntax</header>
+                        <p>Before we start Python programming, we need to have an interpreter to interpret and run our programs.</p>
+                        <p>There are many interpreters available freely to run Python scripts like IDLE (Integrated Development Environment) that comes bundled with the Python software downloaded from http://python.org/.</p>
+                    </section>
+                    <section class="main-section" id="Hello_World">
+                        <header>Hello World</header>
+                        <p>Just type in the following code after you start the interpreter.</p>
+                        <p>In Python3: <code> print(Hello World) </code></p>
+                        <p>In Python2: <code> print "Hello World" </code></p>
+                        <p>They have some differences between Python 2 and Python 3 so be carefull about them.</p>
+                    </section>
+                    <section class="main-section" id="List">
+                        <header>List</header>
+                        <p>In python there are several data types for different usages.</p>
+                        <p>You can use list for storing your data <code> mylist = ["1.apple", "2.banana", "3.cherry", "4.kiwi", "5.orange"] </code> </p>
+                        <p>And you can print it with print() function.<code> print(mylist)</code></p>
+                        <p>Your Output Will Be: <code>["1.apple", "2.banana", "3.cherry", "4.kiwi", "5.orange"]</code></p>
+                    </section>
+                    <section class="main-section" id="Why_You_Should_Learn_Python">
+                        <header>Why You Should Learn Python</header>
+                        <ol>
+                            <li>It is easy</li>
+                            <li>You can do almost everything you want it</li>
+                            <li>Not complicated Syntax</li>
+                            <li>Thousands of Libraries to help your code</li>
+                            <li>So many Tutorial and Resource to self-teach yourself</li>
+                        </ol>
+                    </section>
+                    <section class="main-section" id="References">
+                        <header>References</header>
+                        <p>Pages and Websites which i took their contents to fill my page.</p>
+                        <a href="https://www.geeksforgeeks.org/python-language-introduction/#:~:text=Python%20is%20a%20widely%20used,in%20fewer%20lines%20of%20code.">Geeks For Geeks</a>
+                        <a href="https://www.w3schools.com/python/python_intro.asp" >W3 Schools</a>
+                        <p>Thanks for their examples.</p>
+                    </section>
+                </body>
+            </main>
+        </div>
+    </div>
+</html>
