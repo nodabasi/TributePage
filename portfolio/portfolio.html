@@ -1,0 +1,101 @@
+<style>
+    html{
+        text-align: center;
+    }
+    
+    .container{
+        display: grid;
+        height:100vh;
+        grid-template-rows: 0.3fr 1.5fr 1fr 0.7fr 1fr;
+        grid-template-areas:
+            "nav"
+            "welcome-section"
+            "projects"
+            "about"
+            "contacts";
+        grid-gap:0.5em;
+    }
+    nav{
+        text-align: left;
+        width: 100%;
+        position: fixed;
+        background-color: aqua;
+        grid-area: nav;
+    }
+    #welcome-section{
+        background-color: blue;
+        grid-area: welcome-section;
+        height: 100vh;
+    }
+    #projects{
+        background-color: aquamarine;
+        grid-area: projects;
+    }
+    #contact{
+        background-color: cornflowerblue;
+        grid-area: contacts;
+    }
+    #about{
+        background-color: darkgreen;
+        grid-area: about;
+    }
+    #name {
+       position: fixed;
+       top: 50%;
+       left: 50%;
+       width: 100px;
+       height: 100px;
+       margin-top: -50px;
+       margin-left: -50px;
+    }
+    @media only screen and(max-width:550px){
+        .container{
+            grid-template-rows: 0.4fr 1fr 1fr 1fr 1fr;
+            grid-template-areas: 
+                "nav"
+                "welcome-section"
+                "projects"
+                "contacts";             
+        }
+    }
+</style>
+
+<html>
+    <div class="container">
+        <head>
+            <div>
+                <nav id="navbar" class="nav">
+                    <ul>
+                        <li><a href="#about">About Me</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#projects">My Projects</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <section id="welcome-section">
+                <h1 id="name">Hi My Name is Someone Real</h1>
+            </section>
+        </head>
+        
+        <body>
+
+            <section id="projects">
+                <h2 id="sub-titles">My Projects</h2>
+                <title>FreeCodeCamp Projects</title>
+                <a  class="project-tile" href="https://github.com/nodabasi/freecodecamp_challenges"></a>
+            </section>
+
+            <section id="about">
+                <h4 id="sub-titles">Get Know About Me</h4>
+            </section>
+            
+            <section id="contact">
+                <h3 id="sub-titles">How you can Contact with Me</h3>
+                <a id="profile-link" target="_blank" href=https://github.com/"">Github</a>
+                <a id="profile-link" target="_blank" href="https://www.youtube.com/">Youtube</a>
+                <a id="profile-link" target="_blank" href="https://www.linkedin.com/">LinkedIn</a>
+            </section>
+
+        </body>
+    </div>
+</html>
